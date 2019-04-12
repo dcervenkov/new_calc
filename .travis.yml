@@ -1,0 +1,9 @@
+dist: xenial
+sudo: false
+
+language: cpp
+
+script:
+  - cd ${TRAVIS_BUILD_DIR} && make
+  - cd ${TRAVIS_BUILD_DIR} && make tests
+  - cd ${TRAVIS_BUILD_DIR} && ./tests
